@@ -50,7 +50,6 @@ You can choose two Siamese network models: [_AdHominem_](https://arxiv.org/abs/1
     cd training
     python main.py --model_type "AdHominem"
 
-Results:
 <img src="results.png" width="600">
 
 # Cite the paper
