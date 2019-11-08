@@ -32,6 +32,7 @@ The large-scale dataset of short Amazon reviews used in our paper will be publis
 
 We used [_pretrained word embeddings_](https://fasttext.cc/). You may prepare them as follows:
     
+    mkdir data
     cd data
     wget https://dl.fbaipublicfiles.com/fasttext/vectors-crawl/cc.en.300.bin.gz
     gunzip cc.en.300.bin.gz
