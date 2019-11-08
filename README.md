@@ -10,19 +10,21 @@ Please, feel free to send any comments or suggestions! (benedikt.boenninghoff[at
 
 We used Python 3.6 (Anaconda 3.6). The following libraries are required:
 
-* Tensorflow 1.12
+* Tensorflow 1.12.0
 * spacy 2.1.8
 * textacy 0.8.0
-* fasttext
-* numpy
-* scipy
-* nltk
-* scikit-learn
+* fasttext 0.9.1
+* numpy 1.15.4
+* scipy 1.1.0
+* pandas 0.23.4
+* scikit-learn 0.20.0
+* bs4 0.0.1
 
 # Dataset
 
 The large-scale dataset of short Amazon reviews used in our paper will be published as soon as possible. Currently, this repository works with a [_small Amazon review dataset_](https://github.com/marjanhs/prnn). You can download and uncompress the data as follows:
 
+    mkdir data
     cd data
     wget https://github.com/marjanhs/prnn/raw/master/data/amazon.7z
     sudo apt-get install p7zip-full
@@ -32,7 +34,6 @@ The large-scale dataset of short Amazon reviews used in our paper will be publis
 
 We used [_pretrained word embeddings_](https://fasttext.cc/). You may prepare them as follows:
     
-    mkdir data
     cd data
     wget https://dl.fbaipublicfiles.com/fasttext/vectors-crawl/cc.en.300.bin.gz
     gunzip cc.en.300.bin.gz
@@ -49,6 +50,8 @@ You can choose two Siamese network models: [_AdHominem_](https://arxiv.org/abs/1
     cd training
     python main.py --model_type "AdHominem"
 
+Results:
+<img src="results.png" width="600">
 
 # Cite the paper
 

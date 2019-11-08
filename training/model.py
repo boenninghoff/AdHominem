@@ -404,49 +404,6 @@ class SiameseNetwork:
                             x_c[i, j, k, l] = V_c["<UNK>"]
         return x_w, N_w, N_s, x_c
 
-    ##################
-    # store parameters
-    ##################
-    def store_parameters(self, epoch):
-
-        dir_weights = os.path.join("results",
-                                   self.hyper_parameters["model_type"],
-                                   "trained_weights_" + str(self.hyper_parameters["cv"]),
-                                   )
-        if not os.path.exists(dir_weights):
-            os.makedirs(dir_weights)
-
-        parameters = {"hyper_parameters": {},
-                      "thetas_feature": {},
-                      "thetas_metric": {},
-                      "thetas_E": {},
-                      }
-
-        # hyper-parameters
-        for hp in self.hyper_parameters:
-            parameters["hyper_parameters"][hp] = self.hyper_parameters[hp]
-
-        # character and word embeddings
-        for var in self.thetas_E.keys():
-            parameters["thetas_E"][var] = self.sess.run(self.thetas_E[var])
-
-        # variables for feature extraction
-        for theta in self.thetas_feature.keys():
-            parameters["thetas_feature"][theta] = {}
-            for var in self.thetas_feature[theta].keys():
-                parameters["thetas_feature"][theta][var] = self.sess.run(self.thetas_feature[theta][var])
-
-        # variables for metric learning and domain adaption
-        if self.thetas_metric:
-            for theta in self.thetas_metric.keys():
-                parameters["thetas_metric"][theta] = {}
-                for var in self.thetas_metric[theta].keys():
-                    parameters["thetas_metric"][theta][var] = self.sess.run(self.thetas_metric[theta][var])
-
-        file = os.path.join(dir_weights, "weights_" + str(epoch))
-        with open(file, 'wb') as f:
-            pickle.dump(parameters, f)
-
     ####################################################################################################################
     # train siamese network (HRSN)
     ####################################################################################################################
@@ -564,11 +521,6 @@ class SiameseNetwork:
                 round(100 * acc_te, 4),
             )
             open(file_results, "a").write(s + "\n")
-
-            ##################
-            # store parameters
-            ##################
-            self.store_parameters(epoch)
 
     ####################################################################################################################
     # train siamese network (without data augmentation)
