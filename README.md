@@ -1,4 +1,4 @@
-# AdHominem: A tool for automaticaly analyzing the writing style in social media messages
+# AdHominem: A tool for automatically analyzing the writing style in social media messages
 
 <img src="pic_attention.png" width="600">
 
