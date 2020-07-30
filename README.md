@@ -55,7 +55,6 @@ Using the evaluation script of the [_PAN 2020 AV challenge_](https://pan.webis.d
 |:-----:|:-----:|:-------:|:------:|:-------:|
 | 0.991 | 0.988 | 0.991   | 0.992  |  0.992  |
 
-<img src="results.png" width="600">
 
 # Cite the paper
 
