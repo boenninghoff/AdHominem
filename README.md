@@ -46,7 +46,7 @@ We used [_pretrained word embeddings_](https://fasttext.cc/). You may prepare th
 # Training
 You can train AdHominem as follows:
     
-    python main.py --model_type "AdHominem"
+    python main_adhominem.py
 
 
 Using the evaluation script of the [_PAN 2020 AV challenge_](https://pan.webis.de/clef20/pan20-web/author-identification.html), the results may look like this:
