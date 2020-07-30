@@ -22,7 +22,7 @@ We used Python 3.6 (Anaconda 3.6). The following libraries are required:
 
 # Dataset
 
-This repository works with a [_small Amazon review dataset_](https://github.com/marjanhs/prnn), including 9000 review pairs written by 300 distinct authors. This dataset provides a simple sanity check for new authorship verification methods.
+This repository works with a [_small Amazon review dataset_](https://github.com/marjanhs/prnn), including 9000 review pairs written by 300 distinct authors. Since you can achieve 99% accuracy, this dataset provides a simple sanity check for new authorship verification methods.
 
     mkdir data
     cd data
