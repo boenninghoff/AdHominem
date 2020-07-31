@@ -18,17 +18,17 @@ def main():
     parser.add_argument('-T_c', default=15, type=int)  # maximum number of characters per words
     parser.add_argument('-T_w', default=20, type=int)  # maximum number of words per sentence
     parser.add_argument('-T_s', default=50, type=int)  # maximum number of sentences per document
-    parser.add_argument('-t_s', default=0.99, type=float)  # boundary for similar pairs (close to one)
-    parser.add_argument('-t_d', default=0.01, type=float)  # boundary for dissimilar pairs (close to zero)
+    parser.add_argument('-t_s', default=0.95, type=float)  # boundary for similar pairs (close to one)
+    parser.add_argument('-t_d', default=0.05, type=float)  # boundary for dissimilar pairs (close to zero)
     parser.add_argument('-epochs', default=100, type=int)  # total number of epochs
     parser.add_argument('-train_word_embeddings', default=False, type=bool)  # fine-tune pre-trained word embeddings
     parser.add_argument('-batch_size_tr', default=32, type=int)  # batch size for training
     parser.add_argument('-batch_size_te', default=128, type=int)  # batch size for evaluation
     parser.add_argument('-initial_learning_rate', default=0.002, type=float)  # initial learning rate
-    parser.add_argument('-keep_prob_cnn', default=0.8, type=float)  # dropout for 1D-CNN layer
-    parser.add_argument('-keep_prob_lstm', default=0.8, type=float)  # variational dropout for BiLSTM layer
-    parser.add_argument('-keep_prob_att', default=0.8, type=float)  # dropout for attention layer
-    parser.add_argument('-keep_prob_metric', default=0.8, type=float)  # dropout for metric learning layer
+    parser.add_argument('-keep_prob_cnn', default=0.9, type=float)  # dropout for 1D-CNN layer
+    parser.add_argument('-keep_prob_lstm', default=0.9, type=float)  # variational dropout for BiLSTM layer
+    parser.add_argument('-keep_prob_att', default=0.9, type=float)  # dropout for attention layer
+    parser.add_argument('-keep_prob_metric', default=0.9, type=float)  # dropout for metric learning layer
     hyper_parameters = vars(parser.parse_args())
 
     # create folder for results

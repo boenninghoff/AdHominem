@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="6667bfd6-ea8c-478b-9aea-e006e25990ba" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/main_adhominem.py" beforeDir="false" afterPath="$PROJECT_DIR$/main_adhominem.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1fONwJBQVrcWSvFhMmONkxfloLz" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6667bfd6-ea8c-478b-9aea-e006e25990ba" name="Default Changelist" comment="" />
+      <created>1596085416386</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1596085416386</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="840" y="346" width="424" height="484" key="FileChooserDialogImpl" timestamp="1596118807789">
+      <screen x="67" y="27" width="1981" height="1125" />
+    </state>
+    <state x="840" y="346" width="424" height="484" key="FileChooserDialogImpl/67.27.1981.1125@67.27.1981.1125" timestamp="1596118807789" />
+    <state x="546" y="223" key="SettingsEditor" timestamp="1596089483771">
+      <screen x="67" y="27" width="1981" height="1125" />
+    </state>
+    <state x="546" y="223" key="SettingsEditor/67.27.1981.1125@67.27.1981.1125" timestamp="1596089483771" />
+  </component>
+</project>

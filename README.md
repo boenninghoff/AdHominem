@@ -53,7 +53,7 @@ Using the evaluation script of the [_PAN 2020 AV challenge_](https://pan.webis.d
 
 | AUC   |  c@1  | f_0.5_u |  F1    | overall |
 |:-----:|:-----:|:-------:|:------:|:-------:|
-| 0.991 | 0.988 | 0.991   | 0.992  |  0.992  |
+| 0.997 | 0.993 | 0.991   | 0.993  |  0.994  |
 
 
 # Cite the paper
