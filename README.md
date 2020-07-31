@@ -1,5 +1,7 @@
 # AdHominem: A tool for automatically analyzing the writing style in social media messages
 
+Authorship verification is the task of analyzing the linguistic patterns of two or more texts to determine whether they were written by the same author or not. The analysis is traditionally performed by experts who consider linguistic features, which include spelling mistakes, grammatical inconsistencies, and stylistics for example. Machine learning algorithms, on the other hand, can be trained to accomplish the same, but have traditionally relied on so-called stylometric features. The disadvantage of such features is that their reliability is greatly diminished for short and topically varied social media texts. In this work, we propose an attention-based Siamese neural network approach, with which it is feasible to learn neural features and to visualize the decision-making process.
+
 <img src="pic_attention.png" width="600">
 
 This repository contains the source code used in our paper [_Explainable Authorship Verification in Social Media via Attention-based Similarity Learning_](https://arxiv.org/abs/1910.08144) published at [_2019 IEEE International Conference on Big Data (IEEE BigData 2019)_](http://bigdataieee.org/BigData2019/)
